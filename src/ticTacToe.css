@@ -1,0 +1,39 @@
+table, td, tr{
+  border: 2px solid black;
+}
+
+body{
+  background-color: #a8dfe4bf;
+}
+
+h1{
+  text-align: center;
+  font-size: 3em;
+  margin: 10px 0px 10px 0px;
+}
+
+h2{
+  text-align: center;
+  font-size: 2em;
+  margin: 10px 0px 10px 0px;
+}
+
+table{
+  width : 600px;
+  height: 600px;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+td{
+  padding: 0px 0px 0px 0px;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  font-size: 80px;
+}
+
+input{
+  font-size: 3em;
+}

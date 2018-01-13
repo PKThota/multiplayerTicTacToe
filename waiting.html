@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Waiting...</title>
+    <script type="text/javascript">
+      let requestServer;
+      let processResponce = function(){
+        if(this.responseText == "") return;
+        responce = JSON.parse(this.responseText);
+        window.location = responce.goto;
+      }
+      let requestStart = function(){
+        let req = new XMLHttpRequest();
+        req.open('GET',"/startGame");
+        req.addEventListener('load',processResponce)
+        req.send();
+      }
+      requestServer = setInterval(requestStart,1000);
+    </script>
+  </head>
+  <body>
+    <h1>Waiting for players to join</h1>
+  </body>
+</html>
